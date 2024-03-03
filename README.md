@@ -28,19 +28,19 @@ Options API 에서는 컴포넌트의 로직을 `data`, `methods`, `mounted` 와
 <script>
 	export default {
 		data(){
-        return{
-          count: 0
-        }
-			},
-			methods: {
-				increment(){
-					this.count++;
-				}
-			},
-			mounted(){
-				console.log(`The initial count id ${this.count}`);
+	        return{
+	          count: 0
+	        }
+		},
+		methods: {
+			increment(){
+				this.count++;
 			}
+		},
+		mounted(){
+			console.log(`The initial count id ${this.count}`);
 		}
+	}
 </script>
 <template>
   <div class="contents">
