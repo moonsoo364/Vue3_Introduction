@@ -49,7 +49,7 @@ Options API 에서는 컴포넌트의 로직을 `data`, `methods`, `mounted` 와
 </template>
 ```
 ### Composition API
-컴포지션 API를 사용하면 가져온 API 함수를 사용하여 컴포넌트의 로직을 정의할 수 있습니다. SFC에서 컴포지션 API는 일반적으로 <script setup> 과 함께 사용됩니다. setup 속성은 Vue가 컴파일 타임 변환을 수행하여 상용구가 적은 Composition API를 사용할 수 있도록 하는 힌트입니다.
+컴포지션 API를 사용하면 가져온 API 함수를 사용하여 컴포넌트의 로직을 정의할 수 있습니다. SFC에서 컴포지션 API는 일반적으로 `<script setup>` 과 함께 사용됩니다. `setup` 속성은 Vue가 컴파일 타임 변환을 수행하여 상용구가 적은 Composition API를 사용할 수 있도록 하는 힌트입니다.
 ```
 <script setup>
 	import {ref, onMounted} from 'vue';
