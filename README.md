@@ -25,6 +25,7 @@ Vue 컴포넌트에서는 두 스타일의 API를 제공한다.
 Options API 에서는 컴포넌트의 로직을 `data`, `methods`, `mounted` 와 같은  options 객체를 이용하여 정의합니다. 속성들은 options에 의해 정의되고 `this` 를 통해 사용가능합니다.
 ```
 <script>
+<script>
 	export default {
 		data(){
         return{
@@ -44,7 +45,7 @@ Options API 에서는 컴포넌트의 로직을 `data`, `methods`, `mounted` 와
 <template>
   <div class="contents">
       <h3>Options Api</h3>
-      <button @click="increment">increment > Count is: {{count}}</button>
+      <button @click="increment">Count is: {{count}}</button>
   </div>
 </template>
 ```
@@ -63,7 +64,10 @@ Options API 에서는 컴포넌트의 로직을 `data`, `methods`, `mounted` 와
 	})
 </script>
 <template>
-	<button @click="increment">Count is: {{count}}</button>
+<div class="contents">
+  <h3>Composition Api</h3>
+  <button @click="increment">Count is: {{count}}</button>
+</div>
 </template>
 ```
 ## Which to Choose
